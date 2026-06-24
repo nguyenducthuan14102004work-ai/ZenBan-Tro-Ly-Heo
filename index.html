@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>10 câu lệnh hỏi bệnh heo - ZenBan</title>
+<style>
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  body {
+    margin: 0; padding: 0 14px 40px;
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f4f6f8; color: #1b2733; line-height: 1.5;
+    max-width: 640px; margin-left: auto; margin-right: auto;
+  }
+  header { text-align: center; padding: 22px 0 10px; }
+  header h1 { margin: 0; font-size: 26px; color: #1565a6; line-height: 1.25; }
+  header .sub { font-size: 17px; color: #34465a; margin-top: 6px; }
+  header .brand { font-size: 13px; color: #8a99a8; margin-top: 4px; }
+
+  .howto { background:#e9f6ee; border:1px solid #bfe3cd; border-radius:14px; padding:14px 16px; margin:14px 0; }
+  .howto h3 { margin:0 0 8px; font-size:18px; color:#1e7d45; }
+  .howto ol { margin:0; padding-left:22px; font-size:17px; }
+  .howto li { margin-bottom:5px; }
+
+  .warn { background:#fdeeee; border:2px solid #d9534f; border-radius:14px; padding:14px 16px; margin:14px 0; }
+  .warn .wt { font-weight:700; color:#c0392b; font-size:18px; margin-bottom:6px; }
+  .warn p, .warn li { font-size:16px; margin:4px 0; }
+  .warn ul { margin:6px 0; padding-left:20px; }
+
+  .card { background:#fff; border:1px solid #d8e0e8; border-radius:16px; padding:14px 14px 16px;
+           margin:14px 0; box-shadow:0 1px 3px rgba(20,40,70,.06); }
+  .card.master { border:2px solid #1565a6; }
+  .card-head { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .card-head h2 { margin:0; font-size:18px; color:#16314a; line-height:1.3; }
+  .num { flex:none; width:34px; height:34px; border-radius:50%; background:#1565a6; color:#fff;
+          font-weight:700; font-size:18px; display:flex; align-items:center; justify-content:center; }
+  .star { flex:none; width:34px; height:34px; border-radius:50%; background:#c0392b; color:#fff;
+           font-size:20px; display:flex; align-items:center; justify-content:center; }
+  .cmd { background:#f1f6fb; border:1px solid #d4e4f2; border-radius:10px; padding:12px 14px;
+          font-size:17px; color:#1b2733; white-space:pre-wrap; }
+
+  .copybtn { margin-top:12px; width:100%; min-height:56px; border:none; border-radius:12px;
+              background:#1e8e4a; color:#fff; font-size:20px; font-weight:700;
+              display:flex; align-items:center; justify-content:center; gap:10px; cursor:pointer; }
+  .copybtn:active { transform:scale(.99); }
+  .copybtn.copied { background:#0f6e36; }
+  .copybtn svg { flex:none; }
+
+  footer { text-align:center; font-size:13px; color:#8a99a8; margin-top:22px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>10 CÂU LỆNH HỎI VỀ BỆNH HEO</h1>
+    <div class="sub">Chạm nút <b>Copy</b> → dán vào Trợ Lý AI</div>
+    <div class="brand">ZenBan – AI Nông Nghiệp Thực Chiến Tây Bắc</div>
+  </header>
+
+  <div class="howto">
+    <h3>Cách dùng</h3>
+    <ol>
+      <li>Mở Trợ Lý AI trên điện thoại.</li>
+      <li>Chạm nút <b>Copy câu lệnh</b> ở dưới.</li>
+      <li>Dán vào ô chat của Trợ Lý rồi gửi.</li>
+    </ol>
+  </div>
+
+  <div class="warn">
+    <div class="wt">⚠ Nhớ kỹ</div>
+    <p>Trợ Lý AI chỉ giúp <b>ghi chép</b> và soạn câu hỏi gửi bác sĩ thú y.</p>
+    <p>AI <b>không chẩn đoán bệnh, không kê thuốc, không chỉ liều</b>.</p>
+    <p>Heo có dấu hiệu nguy hiểm → <b>gọi thú y ngay</b>, không chờ AI.</p>
+  </div>
+
+  <div class="card master">
+    <div class="card-head"><span class="star">★</span><h2>CÂU LỆNH GỐC – DÁN ĐẦU TIÊN</h2></div>
+    <div class="cmd">Bạn là trợ lý ghi chép giúp tôi nuôi heo. Tôi mới dùng AI, hãy nói thật dễ hiểu, hỏi tôi từng câu ngắn một. Việc của bạn: ghi lại tình trạng đàn heo và soạn giúp tôi tin nhắn để gửi bác sĩ thú y. Bạn KHÔNG chẩn đoán bệnh, KHÔNG kê thuốc, KHÔNG chỉ liều lượng thuốc hay vắc-xin. Nếu tôi kể có dấu hiệu nguy hiểm (heo chết nhanh, sốt cao, bỏ ăn cả đàn, tiêu chảy ra máu, da tím, khó thở), hãy nhắc tôi GỌI THÚ Y NGAY rồi mới ghi thông tin. Bắt đầu bằng cách hỏi tôi: hôm nay đàn heo có chuyện gì?</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">1</span><h2>Heo bỏ ăn, kém ăn</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Heo nhà tôi đang bỏ ăn hoặc ăn ít. Hãy hỏi tôi từng câu ngắn: mấy con bị, bị mấy ngày rồi, còn uống nước không, phân ra sao, có sốt nóng người không, có ho không. Sau đó ghi gọn lại thành một đoạn để tôi gửi cho thú y.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">2</span><h2>Heo tiêu chảy (đi ngoài)</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Heo nhà tôi đang tiêu chảy. Hãy hỏi tôi: mấy con bị, phân màu gì, có lẫn máu không, bị mấy ngày, heo còn ăn uống không, có nằm li bì không. Ghi gọn lại để tôi gửi thú y. Nếu phân có máu hoặc nhiều con cùng bị, nhắc tôi gọi thú y ngay.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">3</span><h2>Heo ho, thở mệt</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Heo nhà tôi ho hoặc thở mệt. Hãy hỏi tôi: mấy con bị, ho khan hay ho có đờm, thở có khò khè không, có chảy nước mũi không, có sốt không, chuồng có bí gió không. Ghi gọn lại để tôi gửi thú y.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">4</span><h2>Heo sốt, nằm li bì</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Heo nhà tôi nóng người, nằm li bì, ít đi lại. Hãy hỏi tôi: mấy con bị, sờ thấy nóng từ khi nào, còn ăn uống không, da có đỏ hay tím chỗ nào không, có run rẩy không. Ghi gọn lại để tôi gửi thú y. Đây có thể là dấu hiệu nặng, nhắc tôi liên hệ thú y sớm.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">5</span><h2>Da heo nổi mẩn đỏ, tím tái, xuất huyết</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Da heo nhà tôi có chỗ đỏ, tím, hoặc nổi mẩn. Hãy hỏi tôi: mấy con bị, nổi ở đâu (tai, bụng, mông, chân), màu đỏ hay tím, có sốt kèm theo không, bị mấy ngày. Ghi gọn lại để tôi gửi thú y. Da tím tái là dấu hiệu nguy hiểm, nhắc tôi gọi thú y ngay.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">6</span><h2>Heo con (heo sữa) yếu, chết lẻ tẻ</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Heo con nhà tôi đang yếu hoặc chết lẻ tẻ. Hãy hỏi tôi: heo con mấy ngày tuổi, mấy con bị, có bú được không, có tiêu chảy không, heo mẹ có khỏe không, chuồng có lạnh không. Ghi gọn lại để tôi gửi thú y.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">7</span><h2>Heo nái bỏ ăn / sau đẻ bất thường</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Heo nái nhà tôi đang có vấn đề. Hãy hỏi tôi: nái đang chửa hay vừa đẻ, đẻ mấy ngày rồi, còn ăn không, có sốt không, có dịch lạ chảy ra không, có xuống sữa cho con bú không. Ghi gọn lại để tôi gửi thú y.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">8</span><h2>Nhiều con cùng bệnh một lúc (nghi lây lan)</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép (không chẩn đoán, không kê thuốc). Trại tôi có nhiều con cùng bệnh hoặc chết trong thời gian ngắn. Hãy NHẮC TÔI GỌI THÚ Y VÀ BÁO CÁN BỘ THÚ Y XÃ NGAY trước tiên. Sau đó hỏi tôi để ghi nhanh: mấy con bệnh, mấy con chết, bắt đầu từ khi nào, dấu hiệu chung là gì, gần đây có nhập heo mới hay có người lạ vào trại không.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">9</span><h2>Soạn nhanh tin nhắn gửi thú y</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép. Dựa trên những gì tôi vừa kể, hãy soạn giúp tôi MỘT tin nhắn ngắn, gọn, đầy đủ để gửi cho bác sĩ thú y. Trong tin nhắn ghi rõ: số con bị, dấu hiệu chính, bị mấy ngày, đã làm gì chưa. Cuối tin nhắn hỏi thú y nên làm gì tiếp.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+  <div class="card ">
+    <div class="card-head"><span class="num">10</span><h2>Checklist quan sát đàn heo mỗi sáng</h2></div>
+    <div class="cmd">Tiếp tục vai trợ lý ghi chép. Hãy làm cho tôi một bảng kiểm tra ngắn (checklist) để mỗi sáng đi một vòng chuồng nhìn nhanh: con nào bỏ ăn, con nào nằm bệt, phân có lạ không, có con nào ho không, nước uống và máng ăn ổn không. Làm dạng gạch đầu dòng dễ đọc, để tôi phát hiện sớm khi heo chớm có dấu hiệu lạ.</div>
+    <button class="copybtn" type="button" onclick="copyCard(this)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><span class="lbl">Copy câu lệnh</span>
+    </button>
+  </div>
+
+  <div class="warn">
+    <div class="wt">⚠ Khi nào gọi thú y NGAY (không chờ AI)</div>
+    <ul>
+      <li>Heo chết nhanh, chết nhiều con trong vài ngày.</li>
+      <li>Sốt cao, da tím tái, xuất huyết.</li>
+      <li>Bỏ ăn cả đàn cùng lúc.</li>
+      <li>Tiêu chảy nặng, đi ngoài ra máu.</li>
+      <li>Khó thở, thở gấp.</li>
+    </ul>
+    <p>Có thể là dịch lây nhanh. Gọi thú y và báo cán bộ thú y xã ngay. AI chỉ giúp ghi thông tin để gọi cho nhanh.</p>
+  </div>
+
+  <footer>Công cụ hỗ trợ ghi chép, không thay bác sĩ thú y. — ZenBan</footer>
+
+<script>
+  function flash(btn) {
+    var lbl = btn.querySelector('.lbl');
+    btn.classList.add('copied');
+    lbl.textContent = 'Đã copy ✓';
+    setTimeout(function() {
+      btn.classList.remove('copied');
+      lbl.textContent = 'Copy câu lệnh';
+    }, 1800);
+  }
+  function fallbackCopy(text, btn) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.top = '-1000px';
+    ta.style.left = '0';
+    document.body.appendChild(ta);
+    ta.focus();
+    ta.select();
+    try { ta.setSelectionRange(0, text.length); } catch (e) {}
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    if (ok) { flash(btn); }
+    else { alert('Không copy được. Vui lòng chạm giữ vào câu lệnh để copy.'); }
+  }
+  function copyCard(btn) {
+    var text = btn.parentNode.querySelector('.cmd').textContent.trim();
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function() { flash(btn); })
+        .catch(function() { fallbackCopy(text, btn); });
+    } else {
+      fallbackCopy(text, btn);
+    }
+  }
+</script>
+</body>
+</html>
